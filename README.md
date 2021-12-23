@@ -96,6 +96,44 @@
    Backend running at: http://localhost:3000
    ```
 
+## Docker Compose
+
+1. Install Docker
+
+   ```bash
+    https://docs.docker.com/engine/install
+    ```
+
+2. Install Docker Compose
+
+   ```bash
+   https://docs.docker.com/compose/install/
+   ```
+
+3. Make docker-compose.yaml and copy it
+
+   ```sh
+   version: "3.9"
+   services:
+    backed:
+        image: wsaefulloh/backend-sejutacita:latest
+        ports:
+            - 3000:3000
+   ```
+
+4. Run docker compose
+
+   ```bash
+   docker-compose up
+   ```
+
+5. You are all set!
+
+   ```bash
+   Backend running at: http://localhost:3000
+   ```
+
+
 ## Credential
    ```sh
   username = admin_01
